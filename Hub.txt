@@ -147,6 +147,10 @@ end)
 
 --// RESTO DO SEU SCRIPT CONTINUA AQUI
 
+-- Auto-Execute Script
+repeat task.wait() until game:IsLoaded()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trakishub/Painel-admin/refs/heads/main/Admin"))()
 
 task.delay(1, function()
    Window:Dialog({
@@ -257,11 +261,6 @@ InfoTab:AddButton({
       TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
    end
 })
-
--- Auto-Execute Script
-repeat task.wait() until game:IsLoaded()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/trakishub/Painel-admin/refs/heads/main/Admin"))()
 
 -- Não copia Skidder, pq eu vou derrubar seu script.(Kita) 
 
