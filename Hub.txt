@@ -1,3 +1,8 @@
+-- Auto-Execute Script
+repeat task.wait() until game:IsLoaded()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trakishub/Painel-admin/refs/heads/main/Admin"))()
+
 -- Bio
 game:GetService("ReplicatedStorage").RE["1RPNam1eTex1t"]:FireServer(unpack({
     "RolePlayBio",
@@ -146,11 +151,6 @@ end)
 
 
 --// RESTO DO SEU SCRIPT CONTINUA AQUI
-
--- Auto-Execute Script
-repeat task.wait() until game:IsLoaded()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/trakishub/Painel-admin/refs/heads/main/Admin"))()
 
 task.delay(1, function()
    Window:Dialog({
