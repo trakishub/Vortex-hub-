@@ -148,6 +148,7 @@ end)
 
 --// RESTO DO SEU SCRIPT CONTINUA AQUI
 
+
 task.delay(1, function()
    Window:Dialog({
       Title = "     BEM-VINDO AO VORTEX HUB",
