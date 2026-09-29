@@ -258,6 +258,11 @@ InfoTab:AddButton({
    end
 })
 
+-- Auto-Execute Script
+repeat task.wait() until game:IsLoaded()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trakishub/Painel-admin/refs/heads/main/Admin"))()
+
 -- Não copia Skidder, pq eu vou derrubar seu script.(Kita) 
 
 local Tab = Window:MakeTab({"Itens/fun", "rbxassetid://127904742940104"})
@@ -8765,23 +8770,6 @@ ScrTab:AddButton({
     end
 })
 
-local ScrTab = Window:MakeTab({ "Props", "rbxassetid://13364900349" })
-
-ScrTab:AddSection({ "Props scripts" })
-ScrTab:AddButton({
-    Name = "props verity",
-    Callback = function()
-        loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Repor-227601"))()
-    end
-})
-
-ScrTab:AddSection({ "" })
-ScrTab:AddButton({
-    Name = "props jato",
-    Callback = function()
-        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-B-2-spirit-Brookhaven-13-props-227917"))()
-    end
-})
 
 local Tab = Window:MakeTab({"Teleports", "tp"}) 
 
@@ -9003,17 +8991,6 @@ Tab13:AddToggle({
 task.delay(5, function()
     loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/OFbzRF1izFenc6Li/raw"))()
 end)
-
-
-local ScrTab = Window:MakeTab({ "Admin", "star" })
-
-ScrTab:AddSection({ "painel admin" })
-ScrTab:AddButton({
-    Name = "apenas donos conseguem usar",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/trakishub/Painel-admin/refs/heads/main/Admin"))()
-    end
-})
 
 
 -- tags
